@@ -1,0 +1,435 @@
+@font-face {
+  font-family: Lato-Bold;
+  src: url(fonts/Lato2OFL/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url(fonts/Lato2OFL/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-Black;
+  src: url(fonts/Lato2OFL/Lato-Black.ttf);
+}
+@font-face {
+  font-family: MavenProRegular;
+  src: url(fonts/MavenPro/MavenPro-Regular.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width: 1020px;
+}
+header {
+    width: 1020px;
+    height: 63px;
+    background-color: rgb(50, 50, 50);
+  }
+  .top_menu{
+    margin-left:326px;
+    padding-top:34px;
+    line-height: 0;
+
+    text-transform: uppercase;
+  }
+  .top_menu a{
+    font-family: Lato-Bold;
+    font-size: 9px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 255);
+    padding-right: 21px;
+    letter-spacing: 0.5px;
+  }
+  .top_menu a:hover{
+    color: rgba(46, 179, 152, 255);
+  }
+  .top_menu_second_block{
+      margin-left:114px;
+  }
+  .logo{
+      position: absolute;
+      top:10px;
+      left:477px;
+  }
+  .Pointy_Thingy {
+    position: absolute;
+    top: 63px;
+    left: 465px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 26px 45px 0 45px;
+    border-color: rgb(50, 50, 50) transparent transparent transparent;
+      
+  }
+  .line_left {
+    background-color: rgb(228, 233, 235);
+    position: absolute;
+    left: 30px;
+    top: 74px;
+    width: 410px;
+    height: 1px;
+    z-index: 99;
+  }
+  .line_right {
+    background-color: rgb(228, 233, 235);
+    position: absolute;
+    left: 580px;
+    top: 74px;
+    width: 410px;
+    height: 1px;
+    z-index: 98;
+  }
+#portfolio{
+    width:1020px;
+    height:632px;
+    background-color: white;
+  }
+  #portfolio .line{
+    position: absolute;
+    background-color: rgb(228, 233, 235);
+    height: 104px;
+    width: 1px;
+  }
+  #portfolio .top-left-line{
+    top: 204px;
+    left: 99px;
+  }
+  #portfolio .bottom-left-line{
+    top: 540px;
+    left: 99px;
+  }
+  #portfolio .top-right-line{
+    top: 204px;
+    left: 920px;
+  }
+  #portfolio .bottom-right-line{
+    top: 540px;
+    left: 920px;
+  }
+  #portfolio .bottom-line{
+    position: absolute;
+    background-color: rgb(228, 233, 235);
+    height: 1px;
+    width: 960px;
+    top: 772px;
+    left: 30px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(10, 82px);
+    grid-template-rows: 1fr;
+    margin: 89px 120px 0 19px;
+    grid-column-gap: 18px;
+
+}
+.grid:nth-child(2),
+.grid:nth-child(3){
+    margin-top:-39px;
+}
+#hexagon-container-1{
+  width: 180px;
+  grid-column: 2 / 4;
+}
+#hexagon-container-2{
+    width: 180px;
+    grid-column: 4 / 6;
+  }
+  #hexagon-container-3{
+    width: 180px;
+    grid-column: 6 / 8;
+  }
+  #hexagon-container-4{
+    width: 180px;
+    grid-column: 8 / 10;
+  }
+  #hexagon-container-5{
+    width: 180px;
+    grid-column: 1 / 3;
+  }
+  #hexagon-container-6{
+    width: 180px;
+    grid-column: 3 / 5;
+  }
+  #hexagon-container-7{
+    width: 180px;
+    grid-column: 5 / 7;
+  }
+  #hexagon-container-8{
+    width: 180px;
+    grid-column: 7 / 9;
+  }
+  #hexagon-container-9{
+    width: 180px;
+    grid-column: 9 / 11;
+  }
+  #hexagon-container-10{
+    width: 180px;
+    grid-column: 2 / 4;
+  }
+  #hexagon-container-11{
+      width: 180px;
+      grid-column: 4 / 6;
+    }
+    #hexagon-container-12{
+      width: 180px;
+      grid-column: 6 / 8;
+    }
+    #hexagon-container-13{
+      width: 180px;
+      grid-column: 8 / 10;
+    }
+.hexagon{
+  width: 180px;
+  height: 207px;
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotate(120deg);
+  cursor: pointer;
+}
+.hexagon-in1{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-60deg);
+}
+
+.hexagon-in2{
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  transform: rotate(-60deg); 
+}
+
+
+#about_me{
+    width:1020px;
+    height:341px;
+    background-color: #2eb398;
+    padding: 68px 120px;
+    box-sizing: border-box;
+}
+#about_me .h1,
+#about_me .h2{
+  font-family: MavenProRegular;
+  text-align: justify;
+}
+#about_me .h1{
+  font-size: 30px;
+  color: rgba(215, 252, 245, 255);
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+#about_me .h2{
+  font-size: 18px;
+  color: rgba(32, 129, 109, 255);
+  margin-bottom: 14px;
+}
+#about_me .description{
+  width: 783px;
+  font-family: Lato-Regular;
+  font-size: 12px;
+  color: rgba(215, 252, 245, 255);
+  text-align: justify;
+  line-height: 1.9;
+}
+.hexagon-designer-photo{
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  transform: rotate(-60deg); 
+}  
+.hexagon-in2:hover{
+  filter: grayscale(100%); 
+}
+#about-me-hexagon{
+  width: 182px;
+  float: left;
+  margin-right: 16px;
+}
+.designer-left-line{
+  position: absolute;
+  background-color: #219d84;
+  height: 316px;
+  width: 1px;
+  top: 797px;
+  left: 99px;
+  z-index: 100;
+}
+.designer-right-line{
+  position: absolute;
+  background-color: #219d84;
+  height: 316px;
+  width: 1px;
+  top: 797px;
+  left: 920px;
+  z-index: 100;
+}
+.social{
+  position: relative;
+  display: grid;
+  left: 434px;
+  top: 34px;
+  grid-template-columns: 25px 24px 25px 24px 25px 24px;
+  grid-template-rows: 1fr;
+}
+.social div{
+  width: 25px;
+  height: 24px;
+  margin: 0;
+  padding:0;
+  background: #219d84;
+  opacity: 0.3;
+}
+.facebook:hover,
+.twitter:hover,
+.google:hover,
+.pinterest:hover,
+.linkedin:hover,
+.dribbble:hover
+{
+  opacity: 1;
+}
+
+#get_in_touch{
+    width:1020px;
+    height:564px;
+    background-color: #323232;
+}
+#get_in_touch .h1{
+    font-family: MavenProRegular;
+    font-size: 30px;
+    color: rgba(224, 224, 224, 255);
+    padding-top: 59px;
+    margin-left:120px;
+    margin-bottom:-1px;
+}
+#get_in_touch .h2{
+    font-family: MavenProRegular;
+    font-size: 18px;
+    text-align: justify;
+    color: rgba(190, 190, 190, 255);
+    padding: 0 0 19px 122px;
+}
+#get_in_touch form{
+    float: left;
+    margin: 0;
+}
+#get_in_touch input{
+    display: block;
+    width: 580px;
+    height: 38px;
+    background: #454545;
+    border: none;
+    margin: 0 0 16px 120px;
+    padding-left: 15px;
+    padding-bottom: 4px;
+    box-sizing: border-box;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;
+}
+#get_in_touch textarea{
+    width: 580px;
+    height: 150px;
+    background: #454545;
+    border: none;
+    margin: 0 0 12px 120px;
+    padding-left: 14px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    letter-spacing: -0.4px;
+    color: rgba(190, 190, 190, 255);
+    text-align: justify;   
+}
+#get_in_touch input[type=submit]{
+    font-size: 13px;
+    width:90px;
+    height: 37px;
+    background: #2eb398;
+    margin-left: 610px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+#get_in_touch #info-text{
+    width: 180px;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+    float: right;
+    margin-right: 120px;
+    margin-top:-6px;
+}
+#get_in_touch #info-text p{
+  margin-bottom: 38px;
+}
+#get_in_touch #info-text div{
+  font-family: Lato-Bold;
+  color: rgba(190, 190, 190, 255);
+  text-align: justify;
+}
+#get_in_touch #info-text a{
+  text-decoration: none;
+  color: rgba(190, 190, 190, 255);
+}
+#get_in_touch #organization-adress:before{
+  content:"";
+  display: inline-block;
+  background: url("images/location.png");
+  width:7px;
+  height:11px;
+  margin-right: 16px;
+}
+#get_in_touch #organization-phone:before{
+  content:"";
+  display: inline-block;
+  background: url("images/phone.png");
+  width:11px;
+  height:11px;
+  margin-right: 12px;
+}
+#get_in_touch #organization-email:before{
+  content:"";
+  display: inline-block;
+  background: url("images/mail.png");
+  width:13px;
+  height:8px;
+  margin-right: 11px;
+}
+#get-in-touch-top-line{
+  position: relative;
+  width: 960px;
+  height: 1px;
+  background: #2b2b2b;
+  top: 11px;
+  left: 30px;
+}
+#get-in-touch-bottom-line{
+  position: relative;
+  width: 960px;
+  height: 1px;
+  background: #2b2b2b;
+  top: 416px;
+  left: 30px;
+}
+
+footer{
+  width:1020px;
+  height:40px;
+  background-color: #222222;
+  font-family: MavenProRegular;
+  font-size: 8.65655pt;
+  color: rgba(69, 69, 69, 255);
+  text-align: justify;
+  padding: 16px 0 0 39px;
+  box-sizing: border-box;
+}
+
+
